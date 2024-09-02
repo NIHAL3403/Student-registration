@@ -1,0 +1,161 @@
+/* Basic styling for the entire document */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a more modern font */
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); /* Add a gradient background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Change header text color */
+    animation: fadeInDown 1s ease-out; /* Fade-in animation for the header */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/* Styling for the form */
+form {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    animation: fadeInUp 1s ease-out; /* Fade-in animation */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+form input:focus {
+    border-color: #74ebd5; /* Change border color on focus */
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for button hover */
+}
+
+form button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Section styling for displaying student records */
+#studentRecords {
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-out; /* Fade-in animation for the table */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: #555;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: white;
+}
+
+/* Style the action buttons */
+table button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+table button:hover {
+    background-color: #666;
+}
+
+table button:nth-child(1) {
+    background-color: #f0ad4e; /* Orange for edit */
+}
+
+table button:nth-child(2) {
+    background-color: #d9534f; /* Red for delete */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
