@@ -95,7 +95,7 @@ function validateForm(studentName, studentID, email, contactNo) {
     }
     // Check if student name contains only characters
     if (!/^[a-zA-Z ]+$/.test(studentName)) {
-        alert('Student Name should only contain characters.');
+        alert('Student Name should only contain alphabetic characters and spaces.');
         return false;
     }
     // Check if the email format is valid
