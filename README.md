@@ -15,7 +15,7 @@ Enhanced User Experience: Includes modern styling, animations, and smooth transi
 Technologies Used
 
 HTML: For structuring the web page.
-CSS3: For styling the application and adding visual effects.
+CSS: For styling the application and adding visual effects.
 JavaScript : For implementing functionality, including form validation, local storage management, and dynamic content rendering.
 File Structure
 
